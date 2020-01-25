@@ -2,7 +2,7 @@
   "name": "Website Grupy Bauru",
   "description": "Primeiro site da galera",
   "image": "heroku/python",
-  "repository": "",
+  "repository": "https://git.heroku.com/grupy-bauru.git",
   "keywords": ["python", "django" ],
   "addons": [ "heroku-postgresql" ],
   "env": {

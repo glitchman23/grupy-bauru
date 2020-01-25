@@ -1,8 +1,249 @@
 {% extends 'base.html' %}
 
+{% load static %}
 
 {% block content %}
 
-    <h1>Wallace</h1>
+<!-- slider -->
+<div class="slider_area">
+    <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1 overlay2">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-9">
+                    <div class="slider_text text-center">
+                        <p>Grupo de desenvolvedores Python de Bauru e região</p>
+                        <h3>Let's code in Python</h3>
+                        <div class="find_dowmain">
+                            <form action="#" class="find_dowmain_form">
+                                <input type="text" placeholder="Coloque seu e-mail e saiba de tudo!">
+                                <button type="submit">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider end -->
+
+<!-- eventos -->
+<div class="prising_area" id="eventos">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center mb-100">
+                    <h3>
+                        Eventos
+                    </h3>
+                    <p>Venha conhecer as pessoas que fazem parte deste grupo, <br>fazemos encontros
+                        para você que quer começar a conhecer a linguagem e para desenvolvedores
+                        avançados
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-md-6 col-lg-6">
+                <div class="single_prising">
+                    <div class="prising_icon blue">
+                        <i class="flaticon-chat"></i>
+                    </div>
+                    <h3>PyBar</h3>
+                    <p class="prising_text">Bora beber um pouco?
+                        Vamos discutir os projetos. Água também vale :D
+                    </p>
+                    <p class="prise">Próximo <span>12/02</span></p>
+                    <a href="#" class="book_now">Saida mais</a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-6">
+                <div class="single_prising">
+                    <div class="prising_icon blue">
+                        <i class="flaticon-browser"></i>
+                    </div>
+                    <h3>Dojo</h3>
+                    <p class="prising_text">Quer se aprimorar nessa arte? Que tal um desafio em conjunto?</p>
+                    <p class="prise">Próximo <span>13/02</span></p>
+                    <a href="#" class="book_now">Saida mais</a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-6">
+                <div class="single_prising">
+                    <div class="prising_icon blue">
+                        <i class="flaticon-browser"></i>
+                    </div>
+                    <h3>Ateliê de Python</h3>
+                    <p class="prising_text">Você deseja aprender programação direto em um projeto? </p>
+                    <p class="prise">Próximo <span>14/02</span></p>
+                    <a href="#" class="book_now">Saida mais</a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-6">
+                <div class="single_prising">
+                    <div class="prising_icon blue">
+                        <i class="flaticon-chat"></i>
+                    </div>
+                    <h3>Lightning Talks</h3>
+                    <p class="prising_text">Vamos conhecer um pouco mais de todos nós, mas bem rápido!</p>
+                    <p class="prise">Próximo <span>16/02</span></p>
+                    <a href="#" class="book_now">Saida mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- eventos end -->
+
+<!-- repos -->
+<div class="core_features" id="repos">
+    <div class="container">
+        <div class="border-bottm">
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                    <div class="featuures_heading">
+                        <h3>Repositórios</h3>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="featurest_tabs ">
+                        <nav>
+                            <div class="nav" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                    href="#nav-home" role="tab" aria-controls="nav-home"
+                                    aria-selected="true">Treinamento</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                    href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">Produção</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="single_features">
+                                    <div class="icon"><i class="flaticon-browser"></i></div>
+                                    <div class="features_info">
+                                        <h4>
+                                            Aprendendo Python
+                                        </h4>
+                                        <p>Quer aprender a programar, veja os projetos de treinamento que nós já aplicamos por ai.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="single_features">
+                                    <div class="icon blue"><i class="flaticon-security"></i></div>
+                                    <div class="features_info">
+                                        <h4>
+                                            Primeiros passos em ciência de dados
+                                        </h4>
+                                        <p>Alguns desafios para treinar ciência de dados e dar aquele
+                                            up no portfólio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="single_features">
+                                    <div class="icon"><i class="flaticon-browser"></i></div>
+                                    <div class="features_info">
+                                        <h4>
+                                            Nosso Website
+                                        </h4>
+                                        <p>Bora contribuir esse site aqui? Exato esse mesmo que você está acessando.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="single_features">
+                                    <div class="icon blue"><i class="flaticon-security"></i></div>
+                                    <div class="features_info">
+                                        <h4>
+                                            Qual será nosso próximo desafio?
+                                        </h4>
+                                        <p>Vamos montar um desafio em conjunto para o próximo
+                                            Dojo ou oficina.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- repos end -->
+
+<!-- contrate -->
+<div class="lets_launch launch_bg_1 overlay2">
+    <div class="launch_text text-center">
+        <h3>Procurando alguém que manja de Python?</h3>
+        <p>Nós somos desenvolvedores que atuam em diversas áreas como:<br>
+            back-end, front-end, infraestrutura, data science, machine learning
+            e games. Se precisa de ajuda em algum projeto, quer fazer alguma oficina<br>
+            só falar conosco, vamos te ajudar.
+        </p>
+        <div class="chat">
+            <a class="boxed_btn_green2" href="#">
+                <span>Entrar em contato</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- contrate end -->
+
+<!-- novidades -->
+<div class="latest_new_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center mb-100">
+                    <h3>
+                        Últimas notícias
+                    </h3>
+                    <p>Saiba o que aconteceu nos nossos eventos, oficinas, palestras e etc.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_news">
+                    <div class="thumb">
+                        <a href="#">
+                            <img alt="pybar" src={% static "img/news/1.png" %} >
+                        </a>
+                    </div>
+                    <div class="news_content">
+                        <div class="news_meta">
+                            <a href="#">12 Jun, 2019 in <span>PyBar</span> </a>
+                        </div>
+                        <h3><a href="#">"First commit" no São Lourenço</a></h3>
+                        <p class="news_info">Apareceu pouca gente mais teve muita conversa,
+                            estamos planejando os próximos passos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- novidades end -->
+
 
 {% endblock content %}

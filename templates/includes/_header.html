@@ -1,7 +1,48 @@
-<head>
-    <title>Wallace</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    {% include "includes/_styles.html" %}
-</head>
+<!-- Header -->
+{% load static %}
+<header>
+    <div class="header-area ">
+        <div id="sticky-header" class="main-header-area">
+            <div class="container-fluid p-0">
+                <div class="row align-items-center no-gutters">
+                    <div class="col-xl-2 col-lg-2">
+                        <div class="logo-img">
+                            <a href="#">
+                                <img alt="logo" src={% static "img/grupy_logo.png" %}>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a class="active" href="#">home</a></li>
+                                    <li><a href="#eventos">Eventos</a></li>
+                                    <li><a href="#repos">Repositórios</a></li>
+                                    <li><a href="#">Sobre</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                        <div class="log_chat_area d-flex align-items-center">
+                            <a href="#test-form" class="login popup-with-form">
+                                <span>log in</span>
+                            </a>
+                            <div class="live_chat_btn">
+                                <a class="boxed_btn_green" href="#">
+                                    <span>Cadastre-se</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header-end -->
