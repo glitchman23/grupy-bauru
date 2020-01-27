@@ -48,6 +48,7 @@ LOCAL_APPS = [
     "apps.news",
     "apps.repos",
     "apps.members",
+    "apps.about",
 ]
 
 THIRD_PARTY_APPS = [
