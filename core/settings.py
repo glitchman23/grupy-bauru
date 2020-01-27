@@ -25,9 +25,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be used, if set, instead)."
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
@@ -42,7 +42,12 @@ DEFAULT_APPS = [
 ]
 
 LOCAL_APPS = [
-    "pages",
+    "apps.pages",
+    "apps.events",
+    "apps.hire",
+    "apps.news",
+    "apps.repos",
+    "apps.members",
 ]
 
 THIRD_PARTY_APPS = [
@@ -123,8 +128,5 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
-MEDIA_URL = '/media/'
 
 django_heroku.settings(locals())

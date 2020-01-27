@@ -1,0 +1,44 @@
+{% load static %}
+
+{% block content %}
+
+<!-- novidades -->
+<div class="latest_new_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center mb-100">
+                    <h3>
+                        Últimas notícias
+                    </h3>
+                    <p>Saiba o que aconteceu nos nossos eventos, oficinas, palestras e etc.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-lg-4">
+                <div class="single_news">
+                    <div class="thumb">
+                        <a href="#">
+                            <img alt="pybar" src={% static "img/news/1.png" %} >
+                        </a>
+                    </div>
+                    <div class="news_content">
+                        <div class="news_meta">
+                            <a href="#">12 Jun, 2019 in <span>PyBar</span> </a>
+                        </div>
+                        <h3><a href="#">"First commit" no São Lourenço</a></h3>
+                        <p class="news_info">Apareceu pouca gente mais teve muita conversa,
+                            estamos planejando os próximos passos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- novidades end -->
+
+
+{% endblock content %}

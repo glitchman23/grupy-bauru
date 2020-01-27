@@ -13,6 +13,6 @@ admin.autodiscover()
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 urlpatterns = [
-    path("", include('pages.urls')),
+    path("", include('apps.pages.urls')),
     path("admin/", admin.site.urls),
 ]

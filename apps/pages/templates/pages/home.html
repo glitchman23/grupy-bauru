@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- slider -->
+<div class="slider_area">
+    <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1 overlay2">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-9">
+                    <div class="slider_text text-center">
+                        <p>Grupo de desenvolvedores Python de Bauru e região</p>
+                        <h3>Let's code in Python</h3>
+                        <div class="find_dowmain">
+                            <form action="#" class="find_dowmain_form">
+                                <input type="text" placeholder="Coloque seu e-mail e saiba de tudo!">
+                                <button type="submit">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider end -->
+
+{% include "events/events.html" %}
+
+{% include "repos/repos.html" %}
+
+{% include "hire/hire.html" %}
+
+{% include "news/news.html" %}
+
+{% endblock content %}
